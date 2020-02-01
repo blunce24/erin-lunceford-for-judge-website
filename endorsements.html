@@ -1,0 +1,22 @@
+---
+title: Endorsements
+call_to_action: Contact
+background_image_path:
+large_header: false
+show_in_navigation: true
+navigation_order: 2
+---
+
+<div class="editable">
+	<p>
+		Erin Lunceford has recieved endorsements from a variety of people and organizations in the Harris County legal community.
+	</p>
+
+	<p>Current Endorsements:</p>
+
+	{% for endorsement in site.data.endorsements %}
+	<ul>
+		<li>{{ endorsement.name }}</li>
+	</ul>
+	{% endfor %}
+</div>

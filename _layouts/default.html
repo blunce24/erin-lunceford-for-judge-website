@@ -25,9 +25,11 @@
 	</head>
 
 	<body>
-		<header style="background-image: url('{% include relative-src.html src=page.background_image_path %}');" {% if page.large_header %}class="main-hero"{% endif %}>
+		<header>
 			<div class="container">
-				<h1><a href="{{ site.baseurl }}/">{{ site.data.company.title }}</a></h1>
+				<a href="{{ site.baseurl }}/">
+					<img src="/images/logo.png" style="height: 60%; width: 60%;" alt="Logo">
+				</a>
 				<nav>
 					<ul>
 						{% assign nav_pages = site.html_pages | where: 'show_in_navigation', true | sort: 'navigation_order' %}
@@ -52,13 +54,13 @@
 		{% elsif page.call_to_action == 'Contact' %}
 			<section class="quote-section">
 				<p class="container editable">
-					<a href="{{ site.baseurl }}/contact/">Contact us</a> today to find out how we can help you. Your first consultation is free.
+					<a href="{{ site.baseurl }}/contribute/">Support Erin Lunceford</a> today and help her take back the 61st District Court.
 				</p>
 			</section>
 		{% else %}
 			<section class="quote-section">
 				<p class="container editable">
-					<a href="{{ site.baseurl }}/advice/">Read our published advice</a> for an introduction and quick tips on various areas of the law.
+					<a href="{{ site.baseurl }}/blog/">Read our blog</a> for updates from the campaign trail!
 				</p>
 			</section>
 		{% endif %}

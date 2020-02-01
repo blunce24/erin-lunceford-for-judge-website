@@ -37,7 +37,7 @@ header {
 		}
 
 		.container {
-			text-align: right;
+			text-align: center;
 		}
 	}
 
@@ -78,7 +78,7 @@ section {
 	padding: 30px 20px;
 
 	@media (min-width: $mobile-break) {
-		padding: 80px 40px;
+		//padding: 80px 40px;
 	}
 }
 

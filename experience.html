@@ -1,0 +1,27 @@
+---
+title: Experience
+call_to_action: Contact
+background_image_path:
+large_header: false
+show_in_navigation: true
+navigation_order: 1
+---
+
+<div class="editable">
+	<p>Erin has substantial experience as an Attorney, Former Judge, Mediator/Arbitrator and Community Leader:</p>
+  {% for column in site.data.experience %}
+
+	<h3>{{ column.title }}</h3>
+	<p>
+		{% for line in column.lines %}
+		<ul>
+			<li>{{ line.description }}</li>
+		</ul>
+		{% endfor %}
+	</p>
+
+	<p><img src="{{ column.image }}" alt="Gavel"></p>
+
+	{% endfor %}
+
+</div>
