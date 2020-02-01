@@ -34,8 +34,8 @@ defaults:
       path: ""
     values:
       layout: page
-      background_image_path: /images/logo.png
-      image: /images/logo.png
+      background_image_path: /images/logo.jpg
+      image: /images/logo.jpg
   -
     scope:
       path: ""
