@@ -8,8 +8,10 @@ navigation_order: 3
 ---
 
 <p class="editable">
-	Contribute to Erin Lunceford's Campaign via Raise that Money or by sending a check to the address below.
+	Contribute to Erin Lunceford's Campaign via <a href="https://politics.raisethemoney.com/elunceford">Raise that Money</a> or by sending a check to the address below.
 </p>
+
+<script src="/assets/js/donation.js"></script>
 
 <div class="columns">
 	<div class="column">
@@ -22,24 +24,8 @@ navigation_order: 3
 	</div>
 
 	<div class="column">
-		<form method="post" action="/contact-success/">
-			<label for="email_address">Email Address</label>
-			<input id="email_address"type="text" name="email">
-
-			<label for="name">Name</label>
-			<input id="name" type="text" name="name">
-
-			<label for="message">Message</label>
-			<textarea id="message" name="message"></textarea>
-
-			<input type="hidden" name="_to" value="{{ site.data.company.contact_email_address }}">
-			<input type="text" name="_gotcha" style="display: none;">
-
-			<input type="submit" value="Send Message">
-		</form>
 	</div>
 </div>
-
 
 {% if site.google_maps_javascript_api_key and page.call_to_action == 'Map' %}
 	<script>
