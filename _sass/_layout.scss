@@ -20,7 +20,7 @@ header {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: calc(50% - 40px) 175px;
-	height: 420px;
+	//height: 420px;
 	box-sizing: border-box;
 
 	.container {
@@ -92,6 +92,7 @@ section {
 .main {
 	@extend .light-section;
 	font-size: 2.25rem;
+	text-align: justify;
 }
 
 .light-section {
