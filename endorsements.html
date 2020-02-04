@@ -16,7 +16,7 @@ navigation_order: 2
 
 	{% for endorsement in site.data.endorsements %}
 	<ul>
-		<li>{{ endorsement.name }}</li>
+		<li><a href="{{ endorsement.link }}">{{ endorsement.name }}</a></li>
 	</ul>
 	{% endfor %}
 </div>
