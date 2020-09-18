@@ -16,7 +16,11 @@ navigation_order: 2
 
 	{% for endorsement in site.data.endorsements %}
 	<ul>
+		{% if endorsement.link %}
 		<li><a href="{{ endorsement.link }}">{{ endorsement.name }}</a></li>
+		{% else %}
+		<li>{{ endorsement.name }}</li>
+		{% endif %}
 		{% if endorsement.image %}
 		<img src="{{ endorsement.image }}" alt="{{ endorsement.name }}">
 		{% endif %}
