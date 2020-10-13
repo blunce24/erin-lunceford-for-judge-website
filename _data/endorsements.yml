@@ -1,3 +1,13 @@
+- name: Houston Chronicle
+  image: /images/houston_chronicle.jpg
+- name: Houston Bar Association
+  image: /images/houston_bar_association.jpeg
+- name: Houston Black Lawyers Association
+  image: /images/hbla.png
+- name: Mexican American Bar Association
+  image: /images/mexamerba.jpeg
+- name: Houston Association of Women Attorneys
+  image: /images/houstomwomenattys.jpeg
 - name: Houston Realty Business Coalition (HRBC)
   link: https://www.houstonrealty.org
   image: /images/HRBC.JPG
